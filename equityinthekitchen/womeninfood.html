@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Plating Thesis</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/plate3.png" />
+  </head>
+  <body>
+    <main>
+      <!-- dis-biggie - LARGE dis-big - MEDIUM dis - PHONE -->
+      <!-- p1 - green p2 - blue p3 - red -->
+      <!-- make it raingurl -->
+
+      <div class="outer mouse">
+        <div class="inner" id="napkin"></div>
+        <div class="main-plates inner" id="plates-animation">
+          <img
+            src="img/plate2.png"
+            class="p1 dis-biggie"
+            onclick="document.getElementById('one').style.display='block';"
+          />
+          <img
+            src="img/plate4.png"
+            class="p2 dis dis-biggie"
+            onclick="document.getElementById('baos-animation').style.display='grid';document.getElementById('plates-animation').style.display='none'"
+          />
+          <img
+            src="img/plate3.png"
+            class="p3 dis-biggie"
+            onclick="document.getElementById('two').style.display='block'"
+          />
+          <img
+            src="img/plate3.png"
+            class="p2"
+            onclick="document.getElementById('popup').style.display='block'"
+          />
+          <img src="img/text.png"
+          onmouseover="document.getElementById('name').style.display='block'"
+          onmouseout="document.getElementById('name').style.display='none'""/>
+          <img
+            src="img/plate4.png"
+            class="p1"
+            onclick="document.getElementById('about').style.display='block'"
+          />
+          <img
+            src="img/plate4.png"
+            class="p3 dis dis-big"
+            onclick="document.getElementById('plates-animation').style.display='none';document.getElementById('eyes-animation').style.display='block'"
+          />
+          <img
+            src="img/plate3.png"
+            class="p1 dis dis-big"
+            onclick="document.getElementById('plates-animation').style.display='none';document.getElementById('sushi-animation').style.display='block'"
+          />
+          <img
+            src="img/plate2.png"
+            class="p2 dis-big"
+            onclick="document.getElementById('three').style.display='block'"
+          />
+        </div>
+
+        <!-- baos animation easter egg -->
+        <div class="main-plates inner" id="baos-animation">
+          <img src="img/bao.png" class="p1 dis-biggie" />
+          <img
+            src="img/bao.png"
+            class="p1 dis dis-biggie"
+            onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('baos-animation').style.display='none'"
+          />
+          <img src="img/bao.png" class="p1 dis-biggie" />
+          <img src="img/bao.png" class="p1" />
+          <img src="img/text.png" class="p1" />
+          <img src="img/bao.png" class="p1" />
+          <img src="img/bao.png" class="p1 dis dis-big" />
+          <img src="img/bao.png" class="p1 dis dis-big" />
+          <img src="img/bao.png" class="p1 dis-big" />
+        </div>
+
+        <!-- eyes animation -->
+        <div class="inner" id="eyes-animation">
+          <img
+            src="img/eye.gif"
+            class="eyes"
+            onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('eyes-animation').style.display='none'"
+          />
+          <h2>Equitable Representation in Media is important</h2>
+          <img
+            src="img/eye.gif"
+            class="eyes eyes-big"
+            onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('eyes-animation').style.display='none'"
+          />
+        </div>
+
+        <!-- sushi animation -->
+        <div class="inner" id="sushi-animation">
+          <img
+            src="img/sushi.gif"
+            class="sushi"
+            onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('sushi-animation').style.display='none'"
+          />
+        </div>
+
+        <!-- about -->
+        <div class="inner" id="popup">
+          <div class="inner pu1">
+            <h1>
+              about<img
+                id="bao-close"
+                onclick="document.getElementById('popup').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <p>
+              Although half of culinary school students are female, less than 7 
+              percent of professional chefs are women. If they do get a 
+              professional job, they are likely to be paid less than their 
+              counterpart. There are sections in the food industry however that
+              are making strides to address general equality. On this website, 
+              I am sharing a list of successful women in food media, writing, 
+              and hospitality. I hope this tool will inspire you to share this 
+              knowledge with others and lead the way to racial equity.<br /><br />
+            </p>
+          </div>
+        </div>
+
+        <!-- about me -->
+        <div class="inner" id="about">
+          <div class="inner pu1">
+            <h1>
+              about me<img
+                id="bao-close"
+                class="bao"
+                onclick="document.getElementById('about').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <p>
+              welcome! My name is Jessica Burke and I am an avid foodie 
+              and a beginner in coding! Thank you so much for viewing my 
+              project!
+
+            </p>
+          </div>
+        </div>
+
+        <!-- food media -->
+        <div class="inner" id="one">
+          <div class="inner pu1">
+            <h1>
+              1: food media<img
+                id="bao-close"
+                class="bao"
+                onclick="document.getElementById('one').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <h4>padma lakshmi</h4>
+            <ul>
+              <li>
+                Padma Lakshmi is an Indian author and television host. She 
+                is the creator of the Hulu series Taste the Nation and host 
+                of Bravos series Top Chef, now in its 20th season. She 
+                published the cookbooks "Easy Exotic," and "Tangy, Tart, Hot,
+                 and Sweet" in 2007.  She then published her memoir "Love, 
+                 Loss, and What We Ate," and the book titled "The Encyclopedia 
+                 of Spices and Herbs." As one of nthe first Indian women in 
+                 mainstream food media, she is a trailblazer for independent 
+                 Brown foodies. 
+              </li>
+            </ul>
+            <br />
+            <h4>julia child</h4>
+            <p>
+              Julia Child was a television personality who made French cuisine
+              accessible to American audiences. She was one of the first women
+              to host her cooking show on television. She brought French 
+              techniques to America through her cooking titled Mastering the 
+              Art of French Cooking Her television programs include The French 
+              Chef, Cooking with Master Chefs, and Julia Child & Jacques Pépin
+              Cooking at Home. Her  Julia Child Foundation for Gastronomy and 
+              Culinary Arts continues her goal of spreading cooking knowledge 
+              to the public. 
+            </p>
+            </ul>
+            <br />
+            <h4>christine ha</h4>
+            <ul>
+              <li>
+                Christine Ha is the blind chef and writer most known for winning 
+                “MasterChef" season 3. She is a New York Times best-seller 
+                cookbook seller and currently owns multiple restaurants. Her 
+                restaurants including The Blind Goat and Xin Chào are a 
+                representation of how anything you put your mind to is possible. 
+            </ul>
+          </div>
+        </div>
+    <!-- food media -->
+        <div class="inner" id="one">
+          <div class="inner pu1">
+            <h1>
+              1: food media<img
+                id="bao-close"
+                class="bao"
+                onclick="document.getElementById('one').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <h4>padma lakshmi</h4>
+            <ul>
+              <li>
+                Padma Lakshmi is an Indian author and television host. She 
+                is the creator of the Hulu series Taste the Nation and host 
+                of Bravos series Top Chef, now in its 20th season. She 
+                published the cookbooks "Easy Exotic," and "Tangy, Tart, Hot,
+                 and Sweet" in 2007.  She then published her memoir "Love, 
+                 Loss, and What We Ate," and the book titled "The Encyclopedia 
+                 of Spices and Herbs." As one of nthe first Indian women in 
+                 mainstream food media, she is a trailblazer for independent 
+                 Brown foodies. 
+              </li>
+            </ul>
+            <br />
+            <h4>julia child</h4>
+            <p>
+              Julia Child was a television personality who made French cuisine
+              accessible to American audiences. She was one of the first women
+              to host her cooking show on television. She brought French 
+              techniques to America through her cooking titled Mastering the 
+              Art of French Cooking Her television programs include The French 
+              Chef, Cooking with Master Chefs, and Julia Child & Jacques Pépin
+              Cooking at Home. Her  Julia Child Foundation for Gastronomy and 
+              Culinary Arts continues her goal of spreading cooking knowledge 
+              to the public. 
+            </p>
+            </ul>
+            <br />
+            <h4>christine ha</h4>
+            <ul>
+              <li>
+                Christine Ha is the blind chef and writer most known for winning 
+                “MasterChef" season 3. She is a New York Times best-seller 
+                cookbook seller and currently owns multiple restaurants. Her 
+                restaurants including The Blind Goat and Xin Chào are a 
+                representation of how anything you put your mind to is possible. 
+            </ul>
+          </div>
+        </div>
+
+        <!-- food writing -->
+        <div class="inner" id="two">
+          <div class="inner pu1">
+            <h1>
+              food writing<img
+                id="bao-close"
+                class="bao"
+                onclick="document.getElementById('two').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <p></p>
+
+            <div>
+              <p class="quote">
+                Edna Lewis is a renowned cookbook author and chef who taught the 
+                American public to appreciate southern meals. She is one of the 
+                first African American women to publicly write a cookbook. Lewis
+                inspired a new wave of incorporating food with culture to teach 
+                about traditional cuisine. 
+              </p>
+            </div>
+
+            <div>
+              <p class="quote">
+                Marion Nestle is Professor at New York University most known for 
+                her series about Food Politics. From nutrition to pe food, she 
+                uncovers the truth about the food industry. She brings attention 
+                to how food and politics are interconnected and the importance of
+                food in all aspects of life. She currently  blogs at 
+                www.foodpolitics.com
+              </p>
+            </div>
+
+            <p class="quote">
+              Alice Louise Waters is a chef, activist, restaurateur, and author.
+              She is most widely known for starting the farm-to-table movement, 
+              which encourages the use of local, organic produce in restaurants and
+              home cooking. This movement reduces the amount of waste in the food 
+              industry, and also encourages healthy, clean eating. She started her
+              organization The Edible Schoolyard Project in 1995 to educate 
+              students about nutrition and sustainable food. Its comprehensive 
+              program teaches students gardening, food choices, and healthy recipes. 
+              She is an inspiration to not only to me but also young children all over
+              the world.
+
+            </p>
+          </div>
+        </div>
+
+        <!-- hospitality -->
+        <div class="inner" id="three">
+          <div class="inner pu1">
+            <h1>
+              hospitality<img
+                id="bao-close"
+                class="bao"
+                onclick="document.getElementById('three').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <p>
+              Cristeta comerford: Cristeta "Cris" Comerford is a Filipin0-American
+              who is the first woman to become the executive chef at the White House. 
+              Her passion for healthy eating inspired Mrs. Michelle Obama to combat 
+              the obesity problem in school lunches. Comerford designs menus for 
+              official dinners at the White House and mentors other chefs across 
+              the United States. 
+ <br /><br />
+
+              <span id="wordy-stats"
+                >Mariya Russell is the first Black woman chef to earn a Michelin 
+                star. The Michelin star is the highest honors a chef and 
+                restaurant can receive. She attended the Cooking and Hospitality
+                 Institute of Chicago. Starting as a line cook, she moved up in 
+                 the ranks to finally own her restaurant.  a mark of excellence 
+                 for restaurateurs and one of the highest honors a chef can 
+                 receive. 
+                <br /><br />
+                ></iframe>
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <!-- text animation easter egg -->
+        <div class="inner" id="name">
+          <p class="thesis-name">
+            thank you!<br />
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
